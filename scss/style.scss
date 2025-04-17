@@ -1,0 +1,14 @@
+@import "./partials/bootstrap-overrides";
+
+.btn {
+  padding: 0.75rem 2.5rem;
+}
+.row {
+  --bs-gutter-x: 0.5rem;
+  --bs-gutter-y: 0.5rem;
+}
+.card {
+  background-color: var(--bs-dark);
+  color: var(--bs-info);
+  border-radius: 2rem;
+}
