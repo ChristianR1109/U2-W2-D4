@@ -5,6 +5,8 @@
 @import "../../bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 2.5rem;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../bootstrap/scss/variables";
@@ -13,6 +15,15 @@
 $danger: #ff0077;
 $info: #00ffea;
 $light: #f3eeff;
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "danger": $danger,
+    "info": $info,
+    "light": $light,
+  )
+);
 
 // 4. Include any default map overrides here
 $font-sizes-addition: (
